@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Jimmy John's",
       logo: "images/JJ-02.png",
-      url: "#",
+      url: "https://jimmyjohns.integratedproductions.com/",
       color: "linear-gradient(135deg,rgb(26, 26, 26),rgb(0, 0, 0))",
     },
     {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Monza",
       logo: "images/monza.svg",
-      url: "#", 
+      url: "#",
       color: "linear-gradient(135deg,rgb(26, 26, 26),rgb(0, 0, 0))",
     },
     {
