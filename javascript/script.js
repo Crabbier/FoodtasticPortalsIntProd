@@ -2,19 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const brands = [
     {
       name: "Milestones",
-      logo: "../images/Milestones Logo White.png",
+      logo: "/images/Milestones Logo White.png",
       url: "https://milestones.integratedproductions.com/",
       color: "linear-gradient(135deg,rgb(0, 132, 255),rgb(0, 38, 255))",
     },
     {
       name: "Freshii",
-      logo: "../images/Freshii Green Logo.png",
+      logo: "/images/Freshii Green Logo.png",
       url: "https://freshii.integratedproductions.com/",
       color: "linear-gradient(135deg, #00cc66, #009933)",
     },
     {
       name: "Quesada",
-      logo: "../images/Quesada Logo Enhanced.png",
+      logo: "/images/Quesada Logo Enhanced.png",
       url: "https://quesada.integratedproductions.com/",
       color: "linear-gradient(135deg,rgb(201, 0, 0),rgb(160, 1, 1))",
     },
