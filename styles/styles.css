@@ -1,0 +1,293 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* height: 100dvh; */
+  margin: 0;
+  /* width: 100dvw; */
+  /* margin: ; */
+  background-image: url(../images/Home\ Page\ Image\ contrasted.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* backdrop-filter: saturate(1.5);
+  backdrop-filter: contrast(1.8); */
+  color: white;
+  position: relative;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 0;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #0e0e0e;
+  /* place each one on each side */
+  gap: 5px;
+}
+
+#foodtastic-logo {
+  margin-top: 30px;
+  max-height: 190px;
+}
+
+.main-container {
+  margin: 100px 200px 0px 200px;
+  /* padding-top: 10px; */
+  /* background-color: rgba(0, 0, 0, .7); */
+  border-radius: 10px;
+  padding-bottom: 100px;
+  /* backdrop-filter: blur(12px); */
+  position: relative;
+  z-index: 1;
+}
+
+.brands-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  /* background-color: rgb(212, 212, 212); */
+  height: max-content;
+  /* center the elements */
+  place-items: center;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+@media (max-width: 1200px) {
+  .brands-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #integrated-logo {
+    height: 100px;
+  }
+  footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    margin: 50px;
+  }
+  .brands-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    margin: 20px;
+  }
+  .brands-container {
+    grid-template-columns: 1fr;
+  }
+  #integrated-logo {
+    height: 40px;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#integrated-logo {
+  max-height: 100px;
+}
+
+.brand-box {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+  border-radius: 18px;
+  /* transition: transform 0.3s ease, background-color 0.3s ease; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px) scale(1);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.enter-portal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+  filter: opacity(0.9);
+}
+
+.brand-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.brand-box:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.brand-box .enter-portal {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.brand-box:hover .enter-portal {
+  opacity: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #990000;
+  position: relative;
+}
+
+header img {
+  height: 100px;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.header-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #0056b3;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.developed-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
+/* Hide elements initially */
+/* #foodtastic-logo,
+.hero-container h3, */
+.main-container h1,
+.brands-container {
+  opacity: 0;
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+/* Vanish (fade-in + scale) effect for logo */
+.vanish-in {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  transition: opacity 0.7s, transform 0.7s;
+}
+/* #foodtastic-logo {
+  transform: scale(0.8);
+} */
+
+/* Fade-in effect for other elements */
+.fade-in {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+/* For brand boxes appearing one by one */
+.brand-box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.brand-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-box.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.brand-box:hover {
+  transform: translateY(0) scale(1.05);
+}
