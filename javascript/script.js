@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const brands = [
     {
       name: "Milestones",
-      logo: "images/Milestones Logo White.png",
+      logo: "images/Milestones Logo white.png",
       url: "https://milestones.integratedproductions.com/",
       color: "linear-gradient(135deg,rgb(0, 132, 255),rgb(0, 38, 255))",
     },
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Jimmy John's",
-      logo: "images/jj-02.png",
+      logo: "images/JJ-02.png",
       url: "#",
       color: "linear-gradient(135deg,rgb(26, 26, 26),rgb(0, 0, 0))",
     },
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Rostisseries Benny",
-      logo: "images/la-belle.svg",
+      logo: "images/La-belle.svg",
       url: "",
       color: "linear-gradient(135deg, #ff6600, #cc3300)",
     },
